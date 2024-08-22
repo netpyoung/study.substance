@@ -8,7 +8,11 @@
 - [[나만의 게임 텍스처 제작] 서브스탠스 디자이너의 모든 것](https://www.inflearn.com/course/게임텍스처-섭스턴스-디자이너/)
 
 - https://helpx.adobe.com/substance-3d-designer/home.html
+  - https://helpx.adobe.com/substance-3d-designer/getting-started/tutorials-learning.html
 - [Substance 3D Designer Quick Tips | Adobe Substance 3D](https://www.youtube.com/playlist?list=PLB0wXHrWAmCy457vxKM4rQuJ-nvYm9j4M) 
+
+
+- [1MaxFX -  Textures Tutorial](https://www.youtube.com/playlist?list=PLRpiOeaDPL_6t0WEUgaxrekJG5ocxW-lX)
 
 
 https://www.artstation.com/learning/adobe-substance-3d-designer
@@ -29,37 +33,63 @@ https://coloso.co.kr/products/gamegraphic_yijuyeong
 - [free - Substance Player](https://helpx.adobe.com/substance-3d-player/home.html)
   - Drag and drop Substance 3D files (SBSAR or SBS) into the application, adjust the content with easy-to-use parameter widgets and see instant variations in 2D and 3D views simultaneously.
 
+
+
+SBS files are editable and can be opened in Substance Designer or Substance Alchemist.
+SBSAR stands for Substance Archive, and it contains a compressed version of your material, with only the exposed parameters and outputs
+
+- 파라미터 설정법
+  - https://helpx.adobe.com/substance-3d-designer/using/exposing-parameters.html
+  - https://helpx.adobe.com/substance-3d-designer/substance-model-graphs/exposing-parameters.html
+  - 그룹핑
+  - 파라미터 설정값에 의한 비지블 설정
+    - https://helpx.adobe.com/substance-3d-designer/substance-compositing-graphs/exposing-a-parameter/visible-if-control-visibility-of-inputs-outputs-and-parameters.html
+    - input["A"]==true
+
+## 초기
+
+- 템플릿 폴더 설정: Preference > Projects > Project > General 탭
+  - https://youtu.be/SAMyIxp0Le8?si=fQLVwGUNpjLr7Tdr
+- 라이브러리 폴더 설정: Preference > Projects > Project > Library 탭
+
 ## 키
 
-|               |                                                               |
-| ------------- | ------------------------------------------------------------- |
-| 스페이스 / 탭 | 노드 검색 및 추가 가능                                        |
-| 스페이스      | 2D View에서 타일링모드 온오프                                 |
-| 1             | Standard 단일 노드라인                                        |
-| 2             | Material 그룹 노드라인                                        |
-| 3             | Compat Material 그룹 노드라인                                 |
-| D             | 노드 축소                                                     |
-| X             | 노드 라인 크로스                                              |
-| Shift + X     | Bitmap 노드에서 색상 크로스                                   |
-| Ctrl          | 누른 상태에서 노드 라인을 드래그하면 노드 라인 복사           |
-| Shift         | 누른 상태에서 노드 라인 드래그하면 노드라인이 그룹지어서 이동 |
-| Alt           | 노드 라인 클릭시 Dot 추가.                                    |
-| Alt           | Dot노드 드래그시 걸쳐있는 노드 라인 합치기                    |
-| Alt           | 노드 라인 접합부 클릭시 연결 해제                             |
-| Delete        | 노드 삭제(연결 라인은 보존)                                   |
-| Backspace     | 노드 삭제(연결 라인도 삭제)                                   |
+|                           |                                                               |
+| ------------------------- | ------------------------------------------------------------- |
+| 빈칸 더블클릭             | 그래프 프로퍼티                                               |
+| 스페이스 / 탭             | 노드 검색 및 추가 가능                                        |
+| 스페이스                  | 2D View에서 타일링모드 온오프                                 |
+| R/G/B/A/C                 | 2D View - Red/Green/Blue/Alpha/Color                          |
+| Cmd + Shift + 우클릭 이동 | 3D View에서 배경 이동                                         |
+| 1                         | Standard 단일 노드라인                                        |
+| 2                         | Material 그룹 노드라인                                        |
+| 3                         | Compat Material 그룹 노드라인                                 |
+| D                         | 노드 축소                                                     |
+| X                         | 노드 라인 크로스                                              |
+| Shift + X                 | Bitmap 노드에서 색상 크로스                                   |
+| Cmd + E                   | 노드 Edit                                                     |
+| Ctrl                      | 누른 상태에서 노드 라인을 드래그하면 노드 라인 복사           |
+| Shift                     | 누른 상태에서 노드 라인 드래그하면 노드라인이 그룹지어서 이동 |
+| Alt                       | 노드 라인 클릭시 Dot 추가.                                    |
+| Alt                       | Dot노드 드래그시 걸쳐있는 노드 라인 합치기                    |
+| Alt                       | 노드 라인 접합부 클릭시 연결 해제                             |
+| Delete                    | 노드 삭제(연결 라인은 보존)                                   |
+| Backspace                 | 노드 삭제(연결 라인도 삭제)                                   |
 
 Node information > Display timings
 https://helpx.adobe.com/substance-3d-designer/interface/the-graph-view.html
 
+
+
+
 ## 노드
 
-|         |                      |
-| ------- | -------------------- |
-| Frame   | 그룹핑 및 주석       |
-| Pin     | F2로 바로 갈 수 있음 |
-| Dot     | 연결점               |
-| Comment | 주석                 |
+|         |                                |
+| ------- | ------------------------------ |
+| Frame   | 그룹핑 및 주석                 |
+| Pin     | F2로 바로 갈 수 있음           |
+| Dot     | 연결점 / **포탈로도 사용가능** |
+| Comment | 주석                           |
 
 Output
   export시 그룹핑 가능
@@ -241,3 +271,35 @@ https://color.adobe.com/
 
 
 https://www.slideshare.net/LeeJungpyo/kgc2014-jplee-allegorithmic
+
+
+## 머티리얼
+
+https://www.artstation.com/learning/courses/xQY/why-you-are-struggling-to-learn-substance-designer/chapters/P5pA/breaking-an-idea-down
+
+머티리얼 분석시
+낮은 높이에서 높은 높이 순으로 질감 분류
+
+
+
+## UI Making
+
+- [Card Game ART | Frame Design (Substance Designer) Procedural GUI Elements - Fantasy Game](https://youtu.be/9DPftVVz2_I?si=vR_gYbNvknWIuUvd)
+
+회전과 같은 3D UI 만들때 Substance Designer를 이용할 수 도 있겠다.
+
+
+## ---------
+
+
+/Applications/Adobe Substance 3D Designer/Adobe Substance 3D Designer.app/Contents/MacOS/
+sbsbaker
+sbscooker
+sbsrender
+sbsupdater
+
+
+SAT(Adobe 3D Substance Automation Tool Kit)
+https://adminconsole.adobe.com/ 엔터프라이즈 버전에서 사용가능
+
+https://helpx.adobe.com/substance-3d-sat/setup-and-getting-started.html
