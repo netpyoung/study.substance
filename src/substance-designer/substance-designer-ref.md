@@ -1,14 +1,15 @@
-[Substance Days 2023 at GDC: "THE MATERIAL ART OF THE LAST OF US PART I" | Adobe Substance 3D](https://youtu.be/DEuYcOWNV2k?si=1PvYpaNK1qCuOC7r)
-
-[Substance Days 2023 at GDC: "ADVANCES IN UNIFORM CREATION FOR EA SPORTS’ NHL" | Adobe Substance 3D](https://youtu.be/y9Z5Ah0z4lg?si=hv15ArryMnIicOcN)
-
-[Substance Days 2022 @GDC: "Battlefield 2042: Create Badges w/ Substance 3D Designer" | Substance 3D](https://youtu.be/sZcXjRQV3qk?si=CRXKVdXURF4G9tYz)
-
-[GDC 2022 - How to (Not) Create Textures for VFX](https://youtu.be/KaNDezgsg4M?si=ujFlCalnMH7iXO-7)
-
-
+- [Substance Days 2023 at GDC: "THE MATERIAL ART OF THE LAST OF US PART I" | Adobe Substance 3D](https://youtu.be/DEuYcOWNV2k?si=1PvYpaNK1qCuOC7r)
+- [Substance Days 2023 at GDC: "ADVANCES IN UNIFORM CREATION FOR EA SPORTS’ NHL" | Adobe Substance 3D](https://youtu.be/y9Z5Ah0z4lg?si=hv15ArryMnIicOcN)
+- [Substance Days 2022 @GDC: "Battlefield 2042: Create Badges w/ Substance 3D Designer" | Substance 3D](https://youtu.be/sZcXjRQV3qk?si=CRXKVdXURF4G9tYz)
+- [GDC 2022 - How to (Not) Create Textures for VFX](https://youtu.be/KaNDezgsg4M?si=ujFlCalnMH7iXO-7)
 - Adobe Substance 3D Assets 사이트에서 무료 sbs다운 후 분석
-  - https://substance3d.adobe.com/assets/allassets?format=sbs&free=true
+  - <https://substance3d.adobe.com/assets/allassets?format=sbs&free=true>
+- [정쩜100](https://www.youtube.com/@jjum100)
+  - <https://www.youtube.com/watch?v=1gRJ6jmMpy4>
+- [Create Grass in Substance Designer from Scratch](https://www.youtube.com/watch?v=eyypuG8QOkc)
+- [Substance Designer - Stylized Coins](https://www.youtube.com/watch?v=t8-trh-LmaY)
+- [Substance Designer - Stylized Roof Material](https://www.youtube.com/watch?v=SOXS6RRewq4)
+
 
 
 

@@ -303,3 +303,89 @@ SAT(Adobe 3D Substance Automation Tool Kit)
 https://adminconsole.adobe.com/ 엔터프라이즈 버전에서 사용가능
 
 https://helpx.adobe.com/substance-3d-sat/setup-and-getting-started.html
+
+
+---
+
+## [20 Tips I Wish I Knew When I Started Substance Designer](https://www.youtube.com/watch?v=Np95Efw57uQ)
+
+
+0:00:08 - 1 - YUp Mask
+(1 - NormapMap.g) 과 블랜드하여 색상을 입히면 표면 상단에 뭔가 낀(이끼) 효과를 낼 수 있다.
+
+0:03:02 - 2 - Blend Crop
+마스크맵을 Blend를 활용해서 만들 수 있다.
+Ramp / Histogram
+
+0:04:27 - 3 - Sample Image Inputs
+Gradient Map에서 Pick Gradient하는 대신
+텍스쳐랑 Gradient Linear와 를 Gradient(dynamic) 하면 좀 더 깔끔한 색을 얻을 수 있다.
+
+0:08:01 - 4 - Water Damage Mask
+Cloud노이즈를 조정해서 Roughness에 적용하면 물 효과를 얻을 수 있다.
+
+0:10:18 - 5 - Native Invert/Auto Level
+Level역시 Invert와 같이 활용가능. (버튼 있음)
+
+0:11:19 - 6 - Custom Voronoi
+일반적인 Cell로는 뭔가 거리가 비슷비슷해보임
+
+Cloud를 Tile Sampler로 패턴으로 넘김
+Tile Sampler를 인풋2로
+Threshold를 거친것을 인풋 1로
+ Distance로 넘겨서 Maximum Distance을 256으로
+
+0:14:58 - 7 - Auto Bevel
+Tile Sampler에서 Bevel을 사용할때 Distance를 최대치로 함
+Tile Sampler의 X/Y수치를 조절하면 Bevel에서 Distance가 최대치가 아닐때 타일사이 거리가 벌어짐.
+단, Bevel에서 Distance가 최대치면 너무 밝아지는데 Auto Levels를 사용하면 됨.
+
+
+0:16:38 - 8 - RRGRandom Masks
+GrayScale이냐 RGBA냐 - ex) Flood Fill to Random Color 후 Distance 다음 RGBA Split하면 마스크를 4개 얻을 수 있음. 노드 사용이 줄어들음.
+
+0:18:10 - 9 - High Freq. Normal Preview
+GrayScale에서 차이점을 찾기 힘들어서 시각적 확인용으로 Normal을 사용.
+
+0:19:51 - 10 - SubGraphs
+pass
+
+0:24:04 - 11 - MakeItTile Precision
+Cloud를 Transform으로 확대하면 타일링이 깨지는데 이때 Make Tile Photo Gray를 쓰면 보간해줌
+
+0:26:27 - 12 - Keep Ratio
+Tile Generator에서 Size Mode에 Keep Ratio모드가 있다.
+
+0:28:09 - 13 - FloodFill Distances
+작은 균열에는 Flood Fill을 쓰는 게 좋다. 하지만 그냥 쓰게 되면 검은 연결자국이 남는다
+Flood Fill to Random GrayScale를 소스 입력으로 Distance를 사용해주자. 마스크는 원래 자국으로. 그러면 연결자국이 없어진다.
+
+0:30:40 - 14 - Mirrored Parameters
+Tilemap Sampler 가 2개일때 한쪽의 X/Y수치를 바꾸면 다른 한쪽도 변경하는게 불편하다.
+Expose Parameter로 매개변수를 추출하고 Use existing graph input을 사용하면 된다.
+
+0:33:03 - 15 - RGBA 2d Preview
+pass
+
+0:33:59 - 16 - Slope Blur Inflate
+원본과 Blur HQ GrayScale된걸 Slope Blur에 넣어 모양을 부풀릴 수 있다.
+
+0:35:15 - 17 - Pre-Rotations
+풀 같이 회전하는 것들은 회전 원점을 생각해서 정중앙이 아닌 미리 위치를 조금 올려놓자
+
+0:38:04 - 18 - FloodFill Curvature Mask
+
+Cell을 가지고 돌맹이를 만들다 보면 중앙 마스크를 얻기 힘듬
+단순 Cell을 Edge Detect한걸 가지고 하는게 아니라
+Normal이랑 Culvature Sobel 해주고 Histogram Scan으로 엣지를 얻은걸 A
+A에다가 Flood Fill 다음 Flood Fill to Random GrayScale한것을 B
+A랑 B를 Distance에 입력
+
+마스크를 얻을 것이랑 Blend(Multiply)를 함
+
+0:41:00 - 19 - Portal Node
+pass
+
+0:43:53 - 20 - Custom Nodes
+
+Tile Sampler를 예로들어 패턴 입력이 6개가 최대인데 노드를 수정해서 입력을 추가할 수 있다.
